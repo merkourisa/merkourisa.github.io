@@ -1,0 +1,37 @@
+---
+
+---
+<style>
+ol.bibliography {list-style-type: disc;}
+</style>
+
+<div class="text-justify">{{reference}}</div>
+{% if entry.abstract %}
+<button class="button0" onclick="toggleAbstract{{entry.key}}()">Abstract</button>
+{% endif %}
+{% if entry.doi %}
+    <a href="{{ entry.doi | prepend: 'http://doi.org/' }}"><input class="button1" type="button" value="DOI" /></a>
+{% endif %}
+
+{% if entry.note %}
+    <a href="{{ entry.note }}"><input class="button2" type="button" value="URL" /></a>
+{% endif %}
+
+{% if links.pdf %}
+    <a href="{{ links.pdf }}"><input class="button3" type="button" value="PDF" /></a>
+{% endif %}
+<div id="a{{entry.key}}" style="display: none;">
+<pre style="white-space: pre-wrap;">{{entry.abstract}}</pre>
+</div>
+
+
+<script>
+function toggleAbstract{{entry.key}}(parameter) {
+    var x= document.getElementById('a{{entry.key}}');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
