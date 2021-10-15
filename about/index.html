@@ -1,7 +1,7 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.19.1 by Michael Rose
-  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
@@ -10,10 +10,11 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>About - Alexandros Merkouris</title>
-<meta name="description" content="Research, learning and teaching in the areas of educational robotics, embodied learning, CS and STEM education. ">
+<meta name="description" content="Research, learning and teaching in the areas of educational robotics, embodied learning, CS and STEM education.">
 
 
   <meta name="author" content="Alexandros Merkouris">
+  
 
 
 <meta property="og:type" content="website">
@@ -23,7 +24,7 @@
 <meta property="og:url" content="/about/">
 
 
-  <meta property="og:description" content="Research, learning and teaching in the areas of educational robotics, embodied learning, CS and STEM education. ">
+  <meta property="og:description" content="Research, learning and teaching in the areas of educational robotics, embodied learning, CS and STEM education.">
 
 
 
@@ -59,10 +60,13 @@
 
 
 
+
 <!-- end _includes/seo.html -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Alexandros Merkouris Feed">
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Alexandros Merkouris Feed">
+
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -73,21 +77,8 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
-
-<!--[if IE]>
-  <style>
-    /* old IE unsupported flexbox fixes */
-    .greedy-nav .site-title {
-      padding-right: 3em;
-    }
-    .greedy-nav button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-    }
-  </style>
-<![endif]-->
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
 
 
 
@@ -101,7 +92,6 @@
 
   <body class="layout--single wide">
     <nav class="skip-links">
-  <h2 class="screen-reader-text">Skip links</h2>
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
@@ -209,7 +199,7 @@
         <li>
           <a href="mailto:c14merk@ionio.gr">
             <meta itemprop="email" content="c14merk@ionio.gr" />
-            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
           </a>
         </li>
       
@@ -233,7 +223,7 @@
       
         <li>
           <a href="https://github.com/merkourisa" itemprop="sameAs" rel="nofollow noopener noreferrer">
-            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span>
           </a>
         </li>
       
@@ -292,6 +282,8 @@
           <h1 id="page-title" class="page__title" itemprop="headline">About
 </h1>
           
+
+
         </header>
       
 
@@ -303,13 +295,13 @@
 
 <h2 id="previous-experience">Previous Experience</h2>
 
-<p><code class="highlighter-rouge">2006-now</code> <strong>Computer Science Teacher</strong>, Greek Ministry of Education &amp; Religious Affairs</p>
+<p><code class="language-plaintext highlighter-rouge">2006-now</code> <strong>Computer Science Teacher</strong>, Greek Ministry of Education &amp; Religious Affairs</p>
 
-<p><code class="highlighter-rouge">2004-2006</code> <strong>Software Engineer</strong>, Siemens, Greece</p>
+<p><code class="language-plaintext highlighter-rouge">2004-2006</code> <strong>Software Engineer</strong>, Siemens, Greece</p>
 
 <h2 id="education">Education</h2>
 
-<p><code class="highlighter-rouge">2019</code>  <strong>PhD in Educational Robotics</strong></p>
+<p><code class="language-plaintext highlighter-rouge">2019</code>  <strong>PhD in Educational Robotics</strong></p>
 
 <ol class="bibliography"><li><style>
 ol.bibliography {list-style-type: disc;}
@@ -344,7 +336,7 @@ function toggleAbstractMerkouris_thesis_2019(parameter) {
 }
 </script></li></ol>
 
-<p><code class="highlighter-rouge">2014</code>  <strong>MSc in Ubiquitous Computing</strong></p>
+<p><code class="language-plaintext highlighter-rouge">2014</code>  <strong>MSc in Ubiquitous Computing</strong></p>
 
 <ol class="bibliography"><li><style>
 ol.bibliography {list-style-type: disc;}
@@ -379,7 +371,7 @@ function toggleAbstractMerkouris_thesis_2014(parameter) {
 }
 </script></li></ol>
 
-<p><code class="highlighter-rouge">2003</code>  <strong>Diploma in Electrical &amp; Computer Engineering</strong></p>
+<p><code class="language-plaintext highlighter-rouge">2003</code>  <strong>Diploma in Electrical &amp; Computer Engineering</strong></p>
 
 <ol class="bibliography"><li><style>
 ol.bibliography {list-style-type: disc;}
@@ -486,6 +478,8 @@ function toggleAbstractMerkouris_talk_2016(parameter) {
 
 
         
+
+
       </footer>
 
       
@@ -515,18 +509,19 @@ function toggleAbstractMerkouris_talk_2016(parameter) {
 
     
 
-    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2020 Alexandros Merkouris. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2021 Alexandros Merkouris. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
 
     
   <script src="/assets/js/main.min.js"></script>
-  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
 
 
 
