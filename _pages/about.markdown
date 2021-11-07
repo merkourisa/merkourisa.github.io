@@ -14,9 +14,11 @@ I am doing research and teaching in the areas of K-12 Computing and STEM Educati
 
 ## Previous Experience
 
-`2006-now` **Computer Science Teacher**, Greek Ministry of Education & Religious Affairs
+`2021-now` **Adjunct Professor**, Department of Product & Systems Design Engineering, Aegean University, Syros, Greece
 
-`2004-2006` **Software Engineer**, Siemens, Greece
+`2006-now` **Computer Science Teacher**, Greek Ministry of Education & Religious Affairs, Athens, Greece
+
+`2004-2006` **Software Engineer**, Siemens, Athens, Greece
 
 ## Education
 
